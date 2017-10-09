@@ -5,7 +5,6 @@ function new_game ( )
 {
 	count = 0;
   document.getElementById("userGuess").value = "";
-
   //my_number = rand ( 100 );
   
  
@@ -14,9 +13,18 @@ function new_game ( )
 
 function make_guess ( )
 {
-
-  var userGuess = parseInt(document.getElementById("userGuess").value);
+	/*var x = document.getElementById("userNumber");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }*/
   var userNumber = parseInt(document.getElementById("userNumber").value);
+  
+  var userGuess = parseInt(document.getElementById("userGuess").value);
+  
+  
+  
   
   if ( userGuess > userNumber )
   {

@@ -1,3 +1,7 @@
 html {
 	color: Blue
 }
+
+input.value{
+	display: none
+}
